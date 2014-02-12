@@ -13,5 +13,5 @@ Depending on the extension you may also need to load a config file of some type 
 # Make sure this is included before you declare your Redux Framework object.
 Because of WordPress hooks you need to include this before you create your ReduxFramework instance. It has to do with hooks. Just load this loader and your config settings prior to creating that object.
 
-## Note: DO NOT place extensions within ReduxCore/Extensions
+## Note: DO NOT place extensions within ~/ReduxCore/Extensions
 If you do so any other plugin could override your extensions and they would be inaccessible by your code.

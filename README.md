@@ -1,4 +1,4 @@
-Redux extension-loader
+redux-extensions-loader
 ================
 
 The loader code needed to instantiate any Redux extension. To load any Redux extension, you need but do two things:

@@ -16,7 +16,7 @@ if(!function_exists('redux_register_custom_extension_loader')) :
                 // In case you wanted override your override, hah.
                 $class_file = $path . $folder . '/extension_' . $folder . '.php';
                 $class_file = apply_filters( 'redux/extension/'.$ReduxFramework->args['opt_name'].'/'.$folder, $class_file );
-                if( $class_file ) {
+                if ( file_exists( $class_file ) ) {
                     require_once( $class_file );
                     $extension = new $extension_class( $ReduxFramework );
                 }
@@ -26,3 +26,4 @@ if(!function_exists('redux_register_custom_extension_loader')) :
     // Modify {$redux_opt_name} to match your opt_name
     add_action("redux/extensions/{$redux_opt_name}/before", 'redux_register_custom_extension_loader', 0);
 endif;
+if ( file_exists($class_file) ) {

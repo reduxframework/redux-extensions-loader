@@ -1,8 +1,8 @@
 redux-extensions-loader
 ================
 
-** DEPRECATED ** 
-This is no longer needed with Redux 4+. Use Redux `Redux::set_extensions( {OPT_NAME}, {EXTENTION_PATH} );` instead.
+
+> **DEPRECATED**: This is no longer needed with Redux 4+. Use Redux `Redux::set_extensions( {OPT_NAME}, {EXTENTION_PATH} );` instead.
 
 The loader code needed to instantiate any Redux extension. To load any Redux extension, you need but do two things:
 

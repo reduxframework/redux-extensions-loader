@@ -1,6 +1,8 @@
 redux-extensions-loader
 ================
 
+** DEPRECATED ** This is no longer needed with Redux 4+. Use Redux `Redux::set_extensions( {OPT_NAME}, {EXTENTION_PATH} );` instead.
+
 The loader code needed to instantiate any Redux extension. To load any Redux extension, you need but do two things:
 
 * Inside loader.php change `{$redux_opt_name}` to match your opt_name or set `$redux_opt_name` to your `opt_name` and make sure it's accessible by loader.php.
